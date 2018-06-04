@@ -560,4 +560,178 @@ hr {
   border-top: 0;
   margin: 1.5em 0; }
 
+body {
+  font-family: "Merriweather", serif;
+  color: #000000;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif; }
+
+a {
+  color: #991F62;
+  text-decoration: none; }
+  a:hover {
+    color: #8E8E8E; }
+  a:focus {
+    outline: none; }
+
+.wrapper {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+header {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; }
+  header::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.logo {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
+
+nav {
+  float: right; }
+  nav li {
+    display: inline-block;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.87px;
+    padding-left: 40px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none; }
+    @media (max-width: 1199px) {
+      nav li {
+        padding-left: 30px; } }
+    nav li a {
+      color: #696969; }
+      nav li a:hover {
+        color: #991F62; }
+
+.atf h1 {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  font-size: 50px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center; }
+  .atf h1::after {
+    clear: both;
+    content: "";
+    display: block; }
+.atf__image {
+  height: 635px;
+  background: url("/Users/mratif/Desktop/nurfaizaa/images/header-photo.jpg") no-repeat center top;
+  margin-left: -60px;
+  margin-right: -60px; }
+
+.about {
+  background-color: #F1EFF4; }
+
+.customer-quote {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .customer-quote::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .customer-quote__heart {
+    display: inline-block;
+    margin-bottom: 30px;
+    background-image: url("/Users/mratif/Desktop/nurfaizaa/images/master-sprite@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position-x: -48px;
+    background-position-y: 0px;
+    width: 21px;
+    height: 18px; }
+  .customer-quote blockquote {
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: italic;
+    margin: 0; }
+    .customer-quote blockquote:before {
+      position: absolute;
+      top: 0;
+      left: -30px;
+      content: '';
+      display: block;
+      background-image: url("/Users/mratif/Desktop/nurfaizaa/images/master-sprite@2x.png");
+      background-repeat: no-repeat;
+      background-size: 100px 100px;
+      background-position-x: 0px;
+      background-position-y: 0px;
+      width: 20px;
+      height: 14px; }
+    .customer-quote blockquote:after {
+      position: absolute;
+      top: 0;
+      right: -30px;
+      content: '';
+      display: block;
+      background-image: url("/Users/mratif/Desktop/nurfaizaa/images/master-sprite@2x.png");
+      background-repeat: no-repeat;
+      background-size: 100px 100px;
+      background-position-x: -24px;
+      background-position-y: 0px;
+      width: 20px;
+      height: 14px; }
+    .customer-quote blockquote span {
+      color: #8E8E8E;
+      display: block;
+      line-height: 50px; }
+
+.contact-cta {
+  display: inline-block;
+  padding: 16px 25px;
+  background-color: #991F62;
+  color: #FFFFFF; }
+
 /*# sourceMappingURL=app.css.map */

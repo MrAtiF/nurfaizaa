@@ -1,0 +1,34 @@
+// COMMON STYLES
+
+body {
+  font-family: $font-primary;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text-light;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.wrapper {
+  @include container(1600px);
+  padding: $gutter*2;
+}

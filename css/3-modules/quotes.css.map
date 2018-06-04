@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,eAAgB;EACd,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,SAAS",
+"sources": ["../../scss/3-modules/quotes.scss"],
+"names": [],
+"file": "quotes.css"
+}

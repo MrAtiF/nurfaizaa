@@ -1,0 +1,70 @@
+// GLOBAL MIXINS
+// layout
+@mixin container($max-width) {
+  @include clearfix;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+// cta
+@mixin cta($bg-color, $text-color) {
+  display: inline-block;
+  padding: 16px 25px;
+  background-color: $bg-color;
+  color: $text-color;
+}
+// text
+@mixin noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+// elements {
+@mixin sprite($position-x, $position-y, $width, $height) {
+  background-image: url("/Users/mratif/Desktop/nurfaizaa/images/master-sprite@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position-x: $position-x;
+  background-position-y: $position-y;
+  width: $width;
+  height: $height;
+}
+// media queries
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+@mixin xs-screen {
+  @media (max-width: 399px) {
+    @content;
+  }
+}
+@mixin s-screen {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin m-screen {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin l-screen {
+  @media (max-width: 1599px) {
+    @content;
+  }
+}
+@mixin xl-screen {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}

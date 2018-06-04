@@ -1,0 +1,21 @@
+// ABOVE THE FOLD STYLES
+
+.atf {
+
+  h1 {
+    @include container(750px);
+    margin-top: $gutter*5;
+    margin-bottom: $gutter*5;
+    font-size: 50px;
+    font-weight: $light;
+    color: $color-text;
+    text-align: center;
+  }
+
+  &__image{
+    height: 635px;
+    background: url('/Users/mratif/Desktop/nurfaizaa/images/header-photo.jpg') no-repeat center top;
+    margin-left: -$gutter*2;
+    margin-right: -$gutter*2;
+  }
+}

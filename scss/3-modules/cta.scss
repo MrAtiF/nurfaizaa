@@ -1,0 +1,5 @@
+// CTA STYLES
+
+.contact-cta {
+  @include cta($color-primary, $color-white);
+}

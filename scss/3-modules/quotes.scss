@@ -1,0 +1,46 @@
+// CUSTOMER QUOTE STYLES
+
+.customer-quote {
+  @include container(770px);
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  &__heart {
+    display: inline-block;
+    margin-bottom: $gutter;
+    @include sprite(-48px, 0px, 21px, 18px);
+  }
+
+  blockquote {
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: italic;
+    margin: 0;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -30px;
+      content: '';
+      display: block;
+      @include sprite(0px, 0px, 20px, 14px);
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: -30px;
+      content: '';
+      display: block;
+      @include sprite(-24px, 0px, 20px, 14px);
+    }
+
+    span {
+      color: $color-text-light;
+      display: block;
+      line-height: 50px;
+    }
+  }
+}
