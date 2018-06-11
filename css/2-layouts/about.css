@@ -1,14 +1,19 @@
 /*
 Error: Undefined variable: "$bg-grey".
-        on line 3 of scss/2-layouts/about.scss
+        on line 4 of scss/2-layouts/about.scss
 
 1: // ABOUT STYLES
-2: .about {
-3:   background-color: $bg-grey;
-4: }
+2: 
+3: .about {
+4:   background-color: $bg-grey;
+5: 
+6:   &__content {
+7:     @include container;
+8:     font-size: 0;
+9:   }
 
 Backtrace:
-scss/2-layouts/about.scss:3
+scss/2-layouts/about.scss:4
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +67,4 @@ scss/2-layouts/about.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bg-grey\".\A         on line 3 of scss/2-layouts/about.scss\A \A 1: // ABOUT STYLES\A 2: .about {\A 3:   background-color: $bg-grey;\A 4: }"; }
+  content: "Error: Undefined variable: \"$bg-grey\".\A         on line 4 of scss/2-layouts/about.scss\A \A 1: // ABOUT STYLES\A 2: \A 3: .about {\A 4:   background-color: $bg-grey;\A 5: \A 6:   &__content {\A 7:     @include container;\A 8:     font-size: 0;\A 9:   }"; }

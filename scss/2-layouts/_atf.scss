@@ -3,18 +3,19 @@
 .atf {
 
   h1 {
-    @include container(750px);
-    margin-top: $gutter*5;
-    margin-bottom: $gutter*5;
+    @include container;
+    max-width: 870px;
+    padding-bottom: 140px;
     font-size: 50px;
     font-weight: $light;
     color: $color-text;
     text-align: center;
   }
 
-  &__image{
+  &__image {
     height: 635px;
-    background: url('/Users/mratif/Desktop/nurfaizaa/images/header-photo.jpg') no-repeat center top;
+    background: url("/Users/mratif/Desktop/nurfaizaa/images/header-photo.jpg") no-repeat center top;
+    background-color: #e9e6ed;
     margin-left: -$gutter*2;
     margin-right: -$gutter*2;
   }

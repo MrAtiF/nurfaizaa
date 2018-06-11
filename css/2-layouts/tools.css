@@ -1,26 +1,22 @@
 /*
-Error: Undefined mixin 'container'.
-        on line 4 of scss/3-modules/quotes.scss, in `container'
-        from line 4 of scss/3-modules/quotes.scss
+Error: Undefined variable: "$bg-grey".
+        on line 4 of scss/2-layouts/tools.scss
 
-1: // CUSTOMER QUOTE STYLES
+1: // TOOLS STYLES
 2: 
-3: .customer-quote {
-4:   @include container;
-5:   max-width: 890px;
-6:   text-align: center;
-7: 
-8:   &__heart {
-9:     display: inline-block;
+3: .tools {
+4:   background-color: $bg-grey;
+5: 
+6:   &__content {
+7:     @include container;
+8:     font-size: 0;
+9:   }
 
 Backtrace:
-scss/3-modules/quotes.scss:4:in `container'
-scss/3-modules/quotes.scss:4
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `with_mixin'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+scss/2-layouts/tools.scss:4
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -71,4 +67,4 @@ scss/3-modules/quotes.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'container'.\A         on line 4 of scss/3-modules/quotes.scss, in `container'\A         from line 4 of scss/3-modules/quotes.scss\A \A 1: // CUSTOMER QUOTE STYLES\A 2: \A 3: .customer-quote {\A 4:   @include container;\A 5:   max-width: 890px;\A 6:   text-align: center;\A 7: \A 8:   &__heart {\A 9:     display: inline-block;"; }
+  content: "Error: Undefined variable: \"$bg-grey\".\A         on line 4 of scss/2-layouts/tools.scss\A \A 1: // TOOLS STYLES\A 2: \A 3: .tools {\A 4:   background-color: $bg-grey;\A 5: \A 6:   &__content {\A 7:     @include container;\A 8:     font-size: 0;\A 9:   }"; }

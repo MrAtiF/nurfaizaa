@@ -1,21 +1,21 @@
 /*
 Error: Undefined mixin 'container'.
-        on line 4 of scss/3-modules/quotes.scss, in `container'
-        from line 4 of scss/3-modules/quotes.scss
+        on line 4 of scss/2-layouts/subjects.scss, in `container'
+        from line 4 of scss/2-layouts/subjects.scss
 
-1: // CUSTOMER QUOTE STYLES
+1: // SUBJECT STYLES
 2: 
-3: .customer-quote {
+3: .subjects {
 4:   @include container;
-5:   max-width: 890px;
-6:   text-align: center;
-7: 
-8:   &__heart {
-9:     display: inline-block;
+5:   font-size: 0;
+6: 
+7:   &__title {
+8:     @include section-title;
+9:   }
 
 Backtrace:
-scss/3-modules/quotes.scss:4:in `container'
-scss/3-modules/quotes.scss:4
+scss/2-layouts/subjects.scss:4:in `container'
+scss/2-layouts/subjects.scss:4
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
@@ -71,4 +71,4 @@ scss/3-modules/quotes.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'container'.\A         on line 4 of scss/3-modules/quotes.scss, in `container'\A         from line 4 of scss/3-modules/quotes.scss\A \A 1: // CUSTOMER QUOTE STYLES\A 2: \A 3: .customer-quote {\A 4:   @include container;\A 5:   max-width: 890px;\A 6:   text-align: center;\A 7: \A 8:   &__heart {\A 9:     display: inline-block;"; }
+  content: "Error: Undefined mixin 'container'.\A         on line 4 of scss/2-layouts/subjects.scss, in `container'\A         from line 4 of scss/2-layouts/subjects.scss\A \A 1: // SUBJECT STYLES\A 2: \A 3: .subjects {\A 4:   @include container;\A 5:   font-size: 0;\A 6: \A 7:   &__title {\A 8:     @include section-title;\A 9:   }"; }

@@ -1,39 +1,40 @@
 // HEADER STYLES
 
 header {
-  @include container(1600px);
-}
+  @include container(60px);
 
-.logo {
-  display: inline-block;
-  font-weight: 300;
-  font-size: 15px;
-  color: $color-text;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  @include noselect;
-}
-
-nav {
-  float: right;
-
-  li {
+  .logo {
     display: inline-block;
+    padding: 14px 0;
     font-weight: 300;
+    font-size: 15px;
+    color: $color-text;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1.87px;
-    padding-left: 40px;
     @include noselect;
-    @include m-screen {
-      padding-left: 30px;
-    }
+  }
 
-    a {
-      color: $color-nav;
+  nav {
+    float: right;
 
-      &:hover {
-        color: $color-primary;
+    li {
+      display: inline-block;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1.87px;
+      padding-left: 40px;
+      @include noselect;
+      @include m-screen {
+        padding-left: 30px;
+      }
+
+      a {
+        color: $color-nav;
+
+        &:hover {
+          color: $color-primary;
+        }
       }
     }
   }
