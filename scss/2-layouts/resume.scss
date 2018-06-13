@@ -1,0 +1,22 @@
+// RESUME STYLES
+
+.resume {
+  background-color: $bg-grey;
+
+  &__content {
+    @include container;
+    font-size: 0;
+  }
+
+  &__title {
+    @include section-title;
+  }
+
+  &__text {
+    @include section-text;
+
+    span {
+      font-weight: $bold;
+    }
+  }
+}
